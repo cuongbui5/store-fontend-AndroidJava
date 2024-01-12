@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_product"
+        android:icon="@drawable/ic_product"
+        android:title="Product"
+        tools:ignore="HardcodedText" /> <!-- replace ic_product with the actual name of your product icon -->
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"
+        tools:ignore="HardcodedText" /> <!-- replace ic_cart with the actual name of your cart icon -->
+    <item
+        android:id="@+id/action_user"
+        android:icon="@drawable/ic_user"
+        android:title="User"
+        tools:ignore="HardcodedText" />
+
+</menu>

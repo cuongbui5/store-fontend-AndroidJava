@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Địa chỉ -->
+    <TextView
+        android:id="@+id/textStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Đường: Quang Trung"
+        android:textStyle="bold"/>
+
+    <!-- Thành phố -->
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tp: Hà Nội"
+        android:textSize="16sp"/>
+
+    <!-- Số căn hộ -->
+    <TextView
+        android:id="@+id/textApartmentNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số nhà: 01"
+        android:textSize="16sp"/>
+
+    <!-- Default status -->
+    <TextView
+        android:id="@+id/textIsDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+
+        <Button
+            android:id="@+id/btnUpdateAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Update"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnDeleteAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Delete"
+            android:visibility="gone"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnSetDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Default"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
