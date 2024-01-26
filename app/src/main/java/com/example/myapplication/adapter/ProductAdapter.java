@@ -3,6 +3,7 @@ package com.example.myapplication.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -41,6 +42,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.price.setText("$"+product.getPrice());
         String imageUrl = product.getImageCover();
         Picasso.get().load(imageUrl).into(holder.imageCover);
+        holder.productItem.setAlpha(0F);
+        holder.productItem.animate().alpha(1)
+                .setStartDelay(position*200)
+                .setInterpolator(new AccelerateDecelerateInterpolator())
+                .start();
         holder.productItem.setOnClickListener(v -> onItemProductClickListener.onItemProductClick(product.getId()));
 
     }
